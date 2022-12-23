@@ -16,10 +16,17 @@
   "scripts": {
     "prepare": "is-ci || husky install",
     "preinstall": "is-ci || npx only-allow pnpm",
+    " ----------------------- Development ----------------------- ": "",
+    "watch": "echo \"Error: no command specified\" && exit 1",
+    " ------------------------- Testing ------------------------- ": "",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "cover": "echo \"Error: no test specified\" && exit 1",
     " ------------------------- Linting ------------------------- ": "",
     "?format": "echo Format source code and fix issues",
     "format": "prettier --check --write --ignore-unknown .",
+    "format:full": "prettier --check --write --ignore-unknown . --plugin=prettier-plugin-tailwindcss --plugin=prettier-plugin-sh --plugin=prettier-plugin-toml",
+    " ------------------------- Helpers ------------------------- ": "",
+    "?": "npm-scripts-info"
   },
   "dependencies": {
     "is-ci": "3.0.1"
@@ -30,6 +37,7 @@
     "git-format-staged": "3.0.0",
     "husky": "8.0.2",
     "lint-staged": "13.1.0",
+    "npm-scripts-info": "0.3.9",
     "prettier": "2.8.1"
   },
   "engines": {
