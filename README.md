@@ -1,4 +1,3 @@
-
 ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
 ![next version](https://img.shields.io/badge/next-12.2.2-brightgreen)
@@ -16,11 +15,9 @@
 
 </details>
 
-
 # Next2Nothing
 
 Another opiniated starter for next.js, an evolution of [https://github/einselbst/overnext](Overnext).
-
 
 ## Prerequisites
 
@@ -47,7 +44,6 @@ pnpm i -g fauna-shell
 f i -g @aws-amplify/cli  # for amplify deploys
 ```
 
-
 ## Installation
 
 Install my-project with npm
@@ -56,7 +52,7 @@ Install my-project with npm
   pnpm install my-project
   cd my-project
 ```
-    
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
@@ -64,7 +60,6 @@ To run this project, you will need to add the following environment variables to
 `API_KEY`
 
 `ANOTHER_API_KEY`
-
 
 ## Run Locally
 
@@ -92,7 +87,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-
 ## Running Tests
 
 To run tests, run the following command
@@ -100,7 +94,6 @@ To run tests, run the following command
 ```zsh
   pnpm test
 ```
-
 
 ## Docker
 
@@ -113,7 +106,6 @@ To run tests, run the following command
 ```zsh
 pnpm fauna:local  # open fauna shell connected to local docker fauna db
 ```
-
 
 ## Deployment
 
@@ -129,15 +121,13 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
 ### AWS
 
 - Flightcontrol: [https://app.flightcontrol.dev/environments/clby72bd400u4mu014e4ab0nu](Flightcontrol Console)
--> runs on cloudfront: [https://d3l3krwby7noux.cloudfront.net/](Cloudfront Deploy)
+  -> runs on cloudfront: [https://d3l3krwby7noux.cloudfront.net/](Cloudfront Deploy)
 
 - Amplify: [https://eu-central-1.console.aws.amazon.com/amplify/home?region=eu-central-1#/dolgeptpazmtp](Amplify Console)
--> [https://main.dolgeptpazmtp.amplifyapp.com/](Amplify Deploy)
-
+  -> [https://main.dolgeptpazmtp.amplifyapp.com/](Amplify Deploy)
 
 ## Usage/Examples
 
@@ -149,16 +139,13 @@ function App() {
 }
 ```
 
-
 ## Documentation
 
 [Documentation](https://linktodocumentation)
 
-
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 
 ## API Reference
 
@@ -188,20 +175,18 @@ Takes two numbers and returns the sum.
 
 ## Color Reference
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
+| Color         | Hex                                                              |
+| ------------- | ---------------------------------------------------------------- |
 | Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
 | Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
 | Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
 | Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
-
 
 ## Tech Stack
 
 **Client:** React, Redux, TailwindCSS
 
 **Server:** Node, Express
-
 
 ## Features
 
@@ -210,21 +195,17 @@ Takes two numbers and returns the sum.
 - Fullscreen mode
 - Cross platform
 
-
 ## Optimizations
 
 What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
-
 
 ## Lessons Learned
 
 What did you learn while building this project? What challenges did you face and how did you overcome them?
 
-
 ## Authors
 
 - [@einSelbst](https://www.github.com/einselbst)
-
 
 ## Roadmap
 
@@ -233,21 +214,17 @@ What did you learn while building this project? What challenges did you face and
 - `react-hook-form`
 - `fauna`
 
-
-
 ## Related
 
 Here are some related projects
 
 [Overnext](https://github.com/einselbst/overnext)
 
-
 ## Acknowledgements
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
+- [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+- [Awesome README](https://github.com/matiassingers/awesome-readme)
+- [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
 ## Contributing
 
@@ -256,4 +233,3 @@ Contributions are always welcome!
 See `contributing.md` for ways to get started.
 
 Please adhere to this project's `code of conduct`.
-
