@@ -1,0 +1,23 @@
+{
+  "name": "next2nothing",
+  "version": "1.0.0",
+  "description": "Another opinionated next.js typescript boilerplate",
+  "license": "BSD 3",
+  "keywords": [
+    "next.js",
+    "i18n",
+    "typescript"
+  ],
+  "homepage": "",
+  "bugs": "https://github.com/einSelbst/next2nothing/issues",
+  "author": "einSelbst",
+  "private": true,
+  "repository": "https://github.com/einSelbst/next2nothing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "pnpm": ">=6"
+  }
+}
