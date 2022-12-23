@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+next-env.d.ts
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+public
+.nyc_output
+report.*
+docs
+coverage
+.husky
