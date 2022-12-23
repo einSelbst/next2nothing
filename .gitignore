@@ -37,11 +37,11 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
-node_modules/
-jspm_packages/
-/.pnp
+# dependencies
+node_modules
+.pnp
 .pnp.js
+jspm_packages/
 
 # Cypress artifacts
 cypress/videos/
@@ -69,8 +69,9 @@ cypress/screenshots/
 
 # Next.js build output
 .next
-/out/
-/build
+out/
+build
+.swc/
 
 # Serverless directories
 .serverless/
@@ -106,3 +107,6 @@ docs
 # Sentry
 .sentryclirc
 public/sitemap-0.xml
+
+# turbo
+.turbo

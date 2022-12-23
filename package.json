@@ -17,6 +17,9 @@
     "prepare": "is-ci || husky install",
     "preinstall": "is-ci || npx only-allow pnpm",
     " ----------------------- Development ----------------------- ": "",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "clean": "turbo run clean",
     "watch": "echo \"Error: no command specified\" && exit 1",
     " ------------------------- Testing ------------------------- ": "",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -40,8 +43,10 @@
     "prettier": "2.8.1",
     "prettier-plugin-sh": "0.12.8",
     "prettier-plugin-tailwindcss": "0.1.13",
-    "prettier-plugin-toml": "0.3.1"
+    "prettier-plugin-toml": "0.3.1",
+    "turbo": "latest"
   },
+  "packageManager": "pnpm@7.18.0",
   "engines": {
     "pnpm": ">=7"
   }
