@@ -27,6 +27,8 @@
     " ------------------------- Linting ------------------------- ": "",
     "?format": "echo Format source code and fix issues",
     "format": "prettier --check --write --ignore-unknown . --plugin=prettier-plugin-tailwindcss --plugin=prettier-plugin-sh --plugin=prettier-plugin-toml",
+    "?lint": "echo Lint source code",
+    "lint": "turbo run lint",
     " ------------------------- Helpers ------------------------- ": "",
     "?": "npm-scripts-info"
   },
@@ -36,6 +38,8 @@
   "devDependencies": {
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.3.0",
+    "eslint": "7.32.0",
+    "eslint-config-custom": "*",
     "git-format-staged": "3.0.0",
     "husky": "8.0.2",
     "lint-staged": "13.1.0",
