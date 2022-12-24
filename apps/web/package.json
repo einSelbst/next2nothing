@@ -20,8 +20,7 @@
     "?format": "echo Format source code and fix issues",
     "format": "prettier --check --write --ignore-unknown . --plugin=prettier-plugin-tailwindcss --plugin=prettier-plugin-sh --plugin=prettier-plugin-toml",
     "lint:next": "next lint",
-    "lint:eslint": "eslint . --format=pretty --cache",
-    "lint": "eslint"
+    "lint": "tsc --noEmit && TIMING=1 eslint . --format=pretty --cache"
   },
   "dependencies": {
     "next": "13.0.7",

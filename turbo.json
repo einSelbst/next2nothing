@@ -12,5 +12,5 @@
       "cache": false
     }
   },
-  "globalEnv": ["NODE_ENV", "WG_ALLOWED_ORIGIN"]
+  "globalEnv": ["NODE_ENV", "WG_ALLOWED_ORIGIN", "platform"]
 }
