@@ -16,7 +16,7 @@ curl -X GET http://localhost:9991/app/main/operations/Contries
 
 ```shell
 curl --location -g --request GET 'http://localhost:9991/app/main/operations/Countries?wg_variables={ "filter": {"code": { "eq": "AD" } } }' \
---header 'Content-Type: application/json'
+  --header 'Content-Type: application/json'
 ```
 
 #### Call your custom GraphQL server

@@ -3,15 +3,15 @@ import {
   cors,
   EnvironmentVariable,
   introspect,
-  templates
-} from '@wundergraph/sdk';
-import server from './wundergraph.server';
-import operations from './wundergraph.operations';
+  templates,
+} from '@wundergraph/sdk'
+import server from './wundergraph.server'
+import operations from './wundergraph.operations'
 
 const countries = introspect.graphql({
   apiNamespace: 'countries',
-  url: 'https://countries.trevorblades.com/'
-});
+  url: 'https://countries.trevorblades.com/',
+})
 
 // configureWunderGraph emits the configuration
 configureWunderGraphApplication({
@@ -24,13 +24,13 @@ configureWunderGraphApplication({
         // use all the typescript react templates to generate a client
         ...templates.typescript.all,
         templates.typescript.operations,
-        templates.typescript.linkBuilder
-      ]
+        templates.typescript.linkBuilder,
+      ],
     },
     {
       templates: [templates.typescript.client],
-      path: '../../packages/generated-wundergraph'
-    }
+      path: '../../packages/generated-wundergraph',
+    },
   ],
   cors: {
     ...cors.allowAll,
@@ -38,19 +38,20 @@ configureWunderGraphApplication({
       process.env.NODE_ENV === 'production'
         ? [
             // change this before deploying to production to the actual domain where you're deploying your app
-            'http://localhost:3000'
+            'http://localhost:3000',
           ]
         : [
             'http://localhost:3000',
             'http://127.0.0.1:3000/',
-            new EnvironmentVariable('WG_ALLOWED_ORIGIN')
-          ]
+            new EnvironmentVariable('WG_ALLOWED_ORIGIN'),
+          ],
   },
   dotGraphQLConfig: {
-    hasDotWunderGraphDirectory: false
+    hasDotWunderGraphDirectory: false,
   },
   security: {
     enableGraphQLEndpoint:
-      process.env.NODE_ENV !== 'production' || process.env.GITPOD_WORKSPACE_ID !== undefined
-  }
-});
+      process.env.NODE_ENV !== 'production' ||
+      process.env.GITPOD_WORKSPACE_ID !== undefined,
+  },
+})

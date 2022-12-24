@@ -18,7 +18,7 @@
     "inlineSources": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "preserveWatchOutput": true,
+    "preserveWatchOutput": true
   },
   "exclude": ["node_modules"]
 }

@@ -2,7 +2,7 @@
   "name": "n2n-web",
   "version": "0.1.0",
   "private": true,
-  "workspaces":[
+  "workspaces": [
     "apps/*",
     "packages/*"
   ],

@@ -20,7 +20,7 @@ pnpm i -g fauna-shell
 - aws amplify console
 
 ```zsh
-f i -g @aws-amplify/cli  # for amplify deploys
+f i -g @aws-amplify/cli # for amplify deploys
 ```
 
 ## Getting Started
@@ -51,7 +51,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 ### Fauna
 
 ```zsh
-pnpm fauna:local  # open fauna shell connected to local docker fauna db
+pnpm fauna:local # open fauna shell connected to local docker fauna db
 ```
 
 ## Deploy
@@ -65,7 +65,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### AWS
 
 - Flightcontrol: [https://app.flightcontrol.dev/environments/clby72bd400u4mu014e4ab0nu](Flightcontrol Console)
--> runs on cloudfront: [https://d3l3krwby7noux.cloudfront.net/](Cloudfront Deploy)
+  -> runs on cloudfront: [https://d3l3krwby7noux.cloudfront.net/](Cloudfront Deploy)
 
 - Amplify: [https://eu-central-1.console.aws.amazon.com/amplify/home?region=eu-central-1#/dolgeptpazmtp](Amplify Console)
--> [https://main.dolgeptpazmtp.amplifyapp.com/](Amplify Deploy)
+  -> [https://main.dolgeptpazmtp.amplifyapp.com/](Amplify Deploy)
