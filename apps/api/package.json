@@ -1,9 +1,11 @@
 {
-  "name": "n2n-api",
+  "name": "api",
   "version": "0.1.0",
   "description": "API Gateway",
   "scripts": {
-    "dev": "wunderctl up --debug --wundergraph-dir .",
+    "start": "wunderctl start --debug",
+    "dev": "wunderctl up --debug",
+    "1dev": "wunderctl up --debug --wundergraph-dir .",
     "build": "wunderctl generate --debug --wundergraph-dir .",
     "lint": "tsc --noEmit"
   },

@@ -1,0 +1,12 @@
+node_modules
+dist
+.log/
+.git/
+.gitignore
+.prettierignore
+.prettierrc.json5
+README.md
+commitlint.config.js
+renovate.json
+npm-debug.log
+Dockerfile

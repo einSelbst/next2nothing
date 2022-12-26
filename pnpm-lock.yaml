@@ -41,16 +41,22 @@ importers:
 
   apps/api:
     specifiers:
+      '@types/node': 18.11.17
       '@wundergraph/sdk': 0.128.0
       graphql: 16.6.0
       tsconfig: workspace:*
+      typescript: 4.9.4
     dependencies:
       '@wundergraph/sdk': 0.128.0
       graphql: 16.6.0
+    devDependencies:
+      '@types/node': 18.11.17
       tsconfig: link:../../packages/tsconfig
+      typescript: 4.9.4
 
   apps/web:
     specifiers:
+      '@types/node': 18.11.17
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
       eslint: 8.30.0
@@ -60,17 +66,20 @@ importers:
       react-dom: 18.2.0
       react-hook-form: 7.41.0
       tsconfig: workspace:*
+      typescript: 4.9.4
     dependencies:
       next: 13.0.7_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-hook-form: 7.41.0_react@18.2.0
-      tsconfig: link:../../packages/tsconfig
     devDependencies:
+      '@types/node': 18.11.17
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.9
       eslint: 8.30.0
       eslint-config-custom: link:../../packages/eslint-config-custom
+      tsconfig: link:../../packages/tsconfig
+      typescript: 4.9.4
 
   packages/eslint-config-custom:
     specifiers:

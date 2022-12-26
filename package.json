@@ -32,6 +32,13 @@
     "format": "prettier --check --write --ignore-unknown . --plugin=prettier-plugin-tailwindcss --plugin=prettier-plugin-sh --plugin=prettier-plugin-toml",
     "?lint": "echo Lint source code",
     "lint": "turbo run lint",
+    "-------------------------- Docker ---------------------------": "",
+    "docker:build": "docker build -t n2n:latest .",
+    "docker:run": "docker container run -d -p 3000:80 --name n2n n2n:latest",
+    "docker:refresh": "docker compose --verbose up -d --build",
+    "dock": "COMPOSE_DOCKER_CLI_BUILD=1 docker-compose -f docker-compose.yml build --parallel",
+    "docke": "COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose -f docker-compose.yml build --parallel",
+    "docki": "COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=0 docker compose up -d --build",
     " ------------------------- Helpers ------------------------- ": "",
     "?": "npm-scripts-info"
   },
