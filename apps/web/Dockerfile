@@ -17,7 +17,7 @@ RUN apk update
 
 # Set working directory
 WORKDIR /app
-RUN yarn global add turbo@1.7.0-canary.5
+RUN npm install -g turbo
 COPY . .
 RUN corepack enable
 # will remove `turbo@1.4.7-canary.0` to `turbo` after stable release of 1.4.7

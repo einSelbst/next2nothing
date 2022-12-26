@@ -10,7 +10,7 @@ RUN apk update
 RUN corepack enable
 
 # RUN yarn global add turbo @wundergraph/wunderctl
-RUN yarn global add turbo
+#RUN yarn global add turbo
 
 # global npm dependencies: recommended to place those dependencies in the non-root user directory
 #ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
@@ -23,10 +23,11 @@ WORKDIR /app
 # COPY package*.json ./
 #COPY pnpm-lock.yaml ./
 COPY . .
-RUN turbo prune --scope=api --docker
+RUN pnpm dlx turbo prune --scope=api --docker
+#RUN turbo prune --scope=api --docker
 
 # install dependencies
-FROM node:alpine AS installer
+FROM node:18-alpine AS installer
 RUN apk add --no-cache libc6-compat
 RUN apk update
 RUN corepack enable
