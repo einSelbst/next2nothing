@@ -12,13 +12,16 @@
       "dependsOn": ["^build"],
       "env": ["NEXT_PUBLIC_API_HOST"]
     },
+    "web#build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**"]
+    },
     "test": {
       "outputs": ["coverage/**"],
       "dependsOn": []
     },
-    "web#build": {
-      "dependsOn": ["^build"],
-      "outputs": [".next/**"]
+    "start": {
+      "dependsOn": ["^build"]
     },
     "lint": {
       "outputs": []

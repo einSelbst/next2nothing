@@ -20,6 +20,8 @@
     "xpostinstall": "is-ci || typesync",
     " ----------------------- Development ----------------------- ": "",
     "build": "turbo run build",
+    "start": "pnpm start:turbo & pnpm open",
+    "start:turbo": "turbo run start",
     "dev": "turbo run dev --parallel",
     "generate": "turbo run generate",
     "clean": "turbo run clean",
@@ -31,7 +33,7 @@
     "?format": "echo Format source code and fix issues",
     "format": "prettier --check --write --ignore-unknown . --plugin=prettier-plugin-tailwindcss --plugin=prettier-plugin-sh --plugin=prettier-plugin-toml",
     "?lint": "echo Lint source code",
-    "lint": "turbo run lint",
+    "lint": "turbo run lint --parallel",
     "-------------------------- Docker ---------------------------": "",
     "docker:build": "docker build -t n2n:latest .",
     "docker:run": "docker container run -d -p 3000:80 --name n2n n2n:latest",
@@ -40,6 +42,7 @@
     "docke": "COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose -f docker-compose.yml build --parallel",
     "docki": "COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=0 docker compose up -d --build",
     " ------------------------- Helpers ------------------------- ": "",
+    "open": "wait-on -d 500 http://localhost:9991 && open-cli http://localhost:3000",
     "?": "npm-scripts-info"
   },
   "dependencies": {
@@ -48,21 +51,23 @@
   "devDependencies": {
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.3.0",
-    "@types/node": "18.11.17",
+    "@types/node": "18.11.18",
     "eslint": "8.30.0",
     "eslint-config-custom": "*",
     "git-format-staged": "3.0.0",
     "husky": "8.0.2",
     "lint-staged": "13.1.0",
     "npm-scripts-info": "0.3.9",
+    "open-cli": "7.1.0",
     "prettier": "2.8.1",
     "prettier-plugin-sh": "0.12.8",
     "prettier-plugin-tailwindcss": "0.2.1",
     "prettier-plugin-toml": "0.3.1",
     "turbo": "latest",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "wait-on": "7.0.1"
   },
-  "packageManager": "pnpm@7.18.0",
+  "packageManager": "pnpm@7.20.0",
   "engines": {
     "node": ">=18",
     "pnpm": ">=7"
