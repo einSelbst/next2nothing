@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "open": "wait-on -d 500 http://localhost:9991 && open-cli http://localhost:3000",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -19,16 +20,22 @@
     "lint": "tsc --noEmit && TIMING=1 eslint . --format=pretty --cache"
   },
   "dependencies": {
-    "next": "13.0.7",
+    "n2ngateway": "workspace:*",
+    "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "7.41.0"
+    "react-hook-form": "7.41.1",
+    "swr": "2.0.0",
+    "@wundergraph/swr": "0.9.3"
   },
   "devDependencies": {
     "@types/react": "18.0.26",
-    "@types/react-dom": "18.0.9",
+    "@types/react-dom": "18.0.10",
     "eslint": "8.30.0",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*"
+  },
+  "peerDependencies": {
+    "@wundergraph/sdk": "0.128.0"
   }
 }

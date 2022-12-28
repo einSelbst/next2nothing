@@ -1,0 +1,13 @@
+{
+  "name": "n2ngateway",
+  "description": "generated wundergraph api gateway",
+  "version": "0.1.0",
+  "main": "client.ts",
+  "types": "client.ts",
+  "license": "MIT",
+  "dependencies": {
+    "api": "workspace:*",
+    "@wundergraph/nextjs": "0.7.3",
+    "@wundergraph/sdk": "0.128.0"
+  }
+}
