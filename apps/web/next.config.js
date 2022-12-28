@@ -119,6 +119,7 @@ const nextConfig = {
   output: 'standalone',
   poweredByHeader: false,
   reactStrictMode: true,
+  transpilePackages: ['whatever'],
 }
 
 module.exports = nextConfig

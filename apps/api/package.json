@@ -1,16 +1,18 @@
 {
   "name": "api",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "private": true,
   "description": "API Gateway",
   "scripts": {
-    "start": "wunderctl start --debug",
-    "dev": "wunderctl up --debug",
-    "1dev": "wunderctl up --debug --wundergraph-dir .",
+    "dev": "wunderctl up --debug --wundergraph-dir .",
     "build": "wunderctl generate --debug --wundergraph-dir .",
+    "start": "wunderctl start --debug",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
+    "@wundergraph/nextjs": "0.7.3",
     "@wundergraph/sdk": "0.128.0",
+    "@wundergraph/swr": "0.9.3",
     "graphql": "16.6.0"
   },
   "devDependencies": {

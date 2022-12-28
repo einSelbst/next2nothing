@@ -20,9 +20,11 @@
   },
   "dependencies": {
     "next": "13.0.7",
+    "n2ngateway": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "7.41.0"
+    "swr": "2.0.0"
   },
   "devDependencies": {
     "@types/react": "18.0.26",
@@ -30,5 +32,9 @@
     "eslint": "8.30.0",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*"
+  },
+  "peerDependencies": {
+    "@wundergraph/sdk": "0.128.0",
+    "@wundergraph/swr": "0.9.3"
   }
 }
