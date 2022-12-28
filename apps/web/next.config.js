@@ -119,7 +119,6 @@ const nextConfig = {
   output: 'standalone',
   poweredByHeader: false,
   reactStrictMode: true,
-  transpilePackages: ['@next2nothing/gateway'],
 }
 
 module.exports = nextConfig
