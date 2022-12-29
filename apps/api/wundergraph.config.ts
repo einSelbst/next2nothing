@@ -27,9 +27,14 @@ const countries = introspect.graphql({
   url: 'https://countries.trevorblades.com/',
 })
 
+const world = introspect.graphql({
+  apiNamespace: 'world',
+  url: 'https://countries.trevorblades.com',
+})
+
 // configureWunderGraph emits the configuration
 configureWunderGraphApplication({
-  apis: [faunaDB, countries],
+  apis: [faunaDB, countries, world],
   server,
   operations,
   codeGenerators: [

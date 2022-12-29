@@ -8,10 +8,12 @@ module.exports = {
       'always',
       [
         'a11y', // accessibility
+        'api',
         'build',
         'chore',
         'ci', // continuous integration
         'cx', // customer experience
+        'data',
         'deps', // dependencies
         'docs',
         'dx', // all things dev experience

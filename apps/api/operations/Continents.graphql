@@ -1,0 +1,6 @@
+query Continents($filter: world_ContinentFilterInput) {
+  world_continents(filter: $filter) {
+    code
+    name
+  }
+}

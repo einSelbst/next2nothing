@@ -14,6 +14,9 @@ import {
 import type {
 	AllStoresResponse,
 	AllStoresResponseData,
+	ContinentsResponse,
+	ContinentsInput,
+	ContinentsResponseData,
 	CountriesResponse,
 	CountriesInput,
 	CountriesResponseData,
@@ -36,13 +39,16 @@ export interface AuthProvider {
 }
 
 export const defaultClientConfig: ClientConfig = {
-	applicationHash: "f701b428",
+	applicationHash: "26459549",
 	baseURL: "http://localhost:9991",
 	sdkVersion: "0.128.0",
 };
 
 export const operationMetadata: OperationMetadata = {
 	AllStores: {
+		requiresAuthentication: false,
+	},
+	Continents: {
 		requiresAuthentication: false,
 	},
 	Countries: {
@@ -103,6 +109,12 @@ export type Queries = {
 		requiresAuthentication: false;
 		liveQuery: boolean;
 	};
+	Continents: {
+		input: ContinentsInput;
+		data: ContinentsResponseData;
+		requiresAuthentication: false;
+		liveQuery: boolean;
+	};
 	Countries: {
 		input: CountriesInput;
 		data: CountriesResponseData;
@@ -119,6 +131,12 @@ export type LiveQueries = {
 	AllStores: {
 		input?: undefined;
 		data: AllStoresResponseData;
+		liveQuery: true;
+		requiresAuthentication: false;
+	};
+	Continents: {
+		input: ContinentsInput;
+		data: ContinentsResponseData;
 		liveQuery: true;
 		requiresAuthentication: false;
 	};
