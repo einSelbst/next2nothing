@@ -1,7 +1,10 @@
 import { NextPage } from 'next'
-import { useQuery } from '../lib/wundergraph'
+/* import { useQuery } from '../lib/wundergraph' */
+import { useQuery, withWunderGraph } from '../lib/wundergraph'
+/* import { useQuery, withWunderGraph } from 'n2ngateway/nextjs' */
+/* import { useQuery } from 'n2ngateway/nextjs' */
 
-const Home: NextPage = () => {
+const Fauna: NextPage = () => {
   const stores = useQuery({
     operationName: 'AllStores',
   })
@@ -102,4 +105,7 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+// for SSR they say but do I want/ need SSR?
+/* @see https://docs.wundergraph.com/docs/clients-reference/nextjs#ssr */
+export default withWunderGraph(Fauna)
+/* export default Fauna */
