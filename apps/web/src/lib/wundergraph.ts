@@ -1,10 +1,5 @@
-// import type {} from '@wundergraph/sdk'
-// import { createClient, Operations } from 'n2ngateway'
-// import { createHooks } from '@wundergraph/swr'
-
 import {
 	createWunderGraphNext as createWunderGraphNextInternal,
-	createHooks,
 	WithWunderGraphOptions,
 	SSRCache,
 } from "@wundergraph/nextjs";
@@ -42,9 +37,3 @@ const { client, withWunderGraph, useQuery, useMutation, useSubscription, useUser
 	});
 
 export { client, withWunderGraph, useQuery, useMutation, useSubscription, useUser, useAuth, useFileUpload };
-
-
-// export const client = createClient()
-
-// export const { useQuery, useMutation, useSubscription, useUser, useAuth } =
-  // createHooks<Operations>(client)
