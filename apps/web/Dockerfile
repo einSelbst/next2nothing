@@ -1,82 +1,121 @@
 # syntax=docker/dockerfile:1
 
-# https://docs.docker.com/build/hellobuild/
-# https://github.com/pnpm/pnpm/issues/3114#issuecomment-1019512848
-# https://pnpm.io/cli/fetch
-# https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile
-# https://github.com/vercel/turbo/issues/1941#issuecomment-1246330480
-
-# 1. Generate a sparse/partial monorepo with a pruned lockfile for a target workspace. https://turborepo.org/docs/reference/command-line-reference#turbo-prune---scopetarget
-
-# Refer to this original https://github.com/vercel/turborepo/blob/main/examples/with-docker/apps/web/Dockerfile
-
-FROM node:18-alpine AS deps
-# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
-RUN apk add --no-cache libc6-compat
-RUN apk update
-
-# Set working directory
+FROM node:19-slim AS base
+RUN apt-get update
+RUN apt-get install -y openssl
+RUN yarn global add turbo pnpm
 WORKDIR /app
-RUN npm install -g turbo
+ENV SCOPE=web
+
+# =====
+# Pruner: Extract only the application, and it's dependents
+FROM base AS pruner
 COPY . .
-RUN corepack enable
-# will remove `turbo@1.4.7-canary.0` to `turbo` after stable release of 1.4.7
+RUN turbo prune --scope=${SCOPE} --docker
 
-#RUN pnpm dlx turbo@1.7.0-canary.5 prune --scope=web --docker
-RUN turbo prune --scope=web --docker
+# =====
+# Builder: Install packages, and build apps/packages
+FROM base AS json
+# First install the dependencies (as they change less often)
+COPY --from=pruner /app/out/json/ .
+COPY --from=pruner /app/out/pnpm-lock.yaml .
+COPY --from=pruner /app/out/pnpm-workspace.yaml .
+COPY --from=pruner /app/.npmrc .
 
-# 2. Rebuild the source code only when needed
-FROM node:18-alpine AS builder
-RUN apk add --no-cache libc6-compat
-RUN apk update
-WORKDIR /app
+FROM base AS full
+COPY --from=pruner /app/out/full/ .
 
-# Build the project and its dependencies
-ENV NEXT_TELEMETRY_DISABLED 1
-
-# set your APP_NAME
-ENV APP_NAME=web
-
-#COPY .gitignore .gitignore
-COPY --from=deps /app/out/json/ .
-COPY --from=deps /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
-COPY --from=deps /app/out/pnpm-workspace.yaml ./pnpm-workspace.yaml
-
-RUN corepack enable
+FROM base AS runner
+# Don't run production as root
+COPY --from=json /app/ /app/
 RUN pnpm install
-#RUN pnpm install --frozen-lockfile --offline
+COPY --from=full /app/ /app/
+    CMD pnpm dev
 
-COPY --from=deps /app/out/full/ .
-COPY turbo.json turbo.json
-RUN pnpm turbo run build --filter=$APP_NAME...
 
-# 3. Production image, copy all the files and run next
-FROM node:18-alpine AS runner
 
-WORKDIR /app
 
-ENV NEXT_TELEMETRY_DISABLED 1
-ENV NODE_ENV=production
 
-# set your APP_NAME
-ENV APP_NAME=web
 
-RUN addgroup -g 1001 -S nodejs
-RUN adduser -S nextjs -u 1001
 
-# comment out below if you don't have public folder
-COPY --from=builder /app/apps/$APP_NAME/public public
 
-COPY --from=builder --chown=nextjs:nodejs /app/apps/$APP_NAME/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/apps/$APP_NAME/.next/static ./.next/static
+# # https://docs.docker.com/build/hellobuild/
+# # https://github.com/pnpm/pnpm/issues/3114#issuecomment-1019512848
+# # https://pnpm.io/cli/fetch
+# # https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile
+# # https://github.com/vercel/turbo/issues/1941#issuecomment-1246330480
 
-USER nextjs
+# # 1. Generate a sparse/partial monorepo with a pruned lockfile for a target workspace. https://turborepo.org/docs/reference/command-line-reference#turbo-prune---scopetarget
 
-EXPOSE 3000
+# # Refer to this original https://github.com/vercel/turborepo/blob/main/examples/with-docker/apps/web/Dockerfile
 
-ENV PORT 3000
+# FROM node:18-alpine AS deps
+# # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
+# RUN apk add --no-cache libc6-compat
+# RUN apk update
 
-CMD node apps/$APP_NAME/server.js
+# # Set working directory
+# WORKDIR /app
+# RUN npm install -g turbo
+# COPY . .
+# RUN corepack enable
+# # will remove `turbo@1.4.7-canary.0` to `turbo` after stable release of 1.4.7
+
+# #RUN pnpm dlx turbo@1.7.0-canary.5 prune --scope=web --docker
+# RUN turbo prune --scope=web --docker
+
+# # 2. Rebuild the source code only when needed
+# FROM node:18-alpine AS builder
+# RUN apk add --no-cache libc6-compat
+# RUN apk update
+# WORKDIR /app
+
+# # Build the project and its dependencies
+# ENV NEXT_TELEMETRY_DISABLED 1
+
+# # set your APP_NAME
+# ENV APP_NAME=web
+
+# #COPY .gitignore .gitignore
+# COPY --from=deps /app/out/json/ .
+# COPY --from=deps /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
+# COPY --from=deps /app/out/pnpm-workspace.yaml ./pnpm-workspace.yaml
+
+# RUN corepack enable
+# RUN pnpm install
+# #RUN pnpm install --frozen-lockfile --offline
+
+# COPY --from=deps /app/out/full/ .
+# COPY turbo.json turbo.json
+# RUN pnpm turbo run build --filter=$APP_NAME...
+
+# # 3. Production image, copy all the files and run next
+# FROM node:18-alpine AS runner
+
+# WORKDIR /app
+
+# ENV NEXT_TELEMETRY_DISABLED 1
+# ENV NODE_ENV=production
+
+# # set your APP_NAME
+# ENV APP_NAME=web
+
+# RUN addgroup -g 1001 -S nodejs
+# RUN adduser -S nextjs -u 1001
+
+# # comment out below if you don't have public folder
+# COPY --from=builder /app/apps/$APP_NAME/public public
+
+# COPY --from=builder --chown=nextjs:nodejs /app/apps/$APP_NAME/.next/standalone ./
+# COPY --from=builder --chown=nextjs:nodejs /app/apps/$APP_NAME/.next/static ./.next/static
+
+# USER nextjs
+
+# EXPOSE 3000
+
+# ENV PORT 3000
+
+# CMD node apps/$APP_NAME/server.js
 
 # # build stage
 # FROM node:18-alpine AS base

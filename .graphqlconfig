@@ -1,6 +1,6 @@
 {
   "project": {
-    "schemaPath": "generated/wundergraph.schema.graphql",
+    "schemaPath": "apps/api/generated/wundergraph.schema.graphql",
     "extensions": {
       "endpoint": {
         "introspect": false,
