@@ -45,45 +45,45 @@ importers:
 
   apps/api:
     specifiers:
-      '@wundergraph/nextjs': 0.7.7
-      '@wundergraph/sdk': 0.130.2
-      '@wundergraph/swr': 0.9.7
+      '@wundergraph/nextjs': 0.8.0
+      '@wundergraph/sdk': 0.131.0
+      '@wundergraph/swr': 0.10.0
       graphql: 16.6.0
       tsconfig: workspace:*
     dependencies:
-      '@wundergraph/nextjs': 0.7.7_2jyofirdckvkqkv5moktdjmqzq
-      '@wundergraph/sdk': 0.130.2
-      '@wundergraph/swr': 0.9.7_2jyofirdckvkqkv5moktdjmqzq
+      '@wundergraph/nextjs': 0.8.0_m22nqylvdidh3apcitmk5of34a
+      '@wundergraph/sdk': 0.131.0
+      '@wundergraph/swr': 0.10.0_qoefd5xcxehrd2g42tjwlt55wy
       graphql: 16.6.0
     devDependencies:
       tsconfig: link:../../packages/tsconfig
 
   apps/web:
     specifiers:
-      '@tanstack/react-query': 4.20.4
+      '@tanstack/react-query': 4.22.0
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.10
-      '@wundergraph/nextjs': 0.7.7
-      '@wundergraph/react-query': 0.2.4
-      '@wundergraph/sdk': 0.130.2
+      '@wundergraph/nextjs': 0.8.0
+      '@wundergraph/react-query': 0.3.0
+      '@wundergraph/sdk': 0.131.0
       eslint: 8.32.0
       eslint-config-custom: workspace:*
       n2ngateway: workspace:*
       next: 13.1.2
       react: 18.2.0
       react-dom: 18.2.0
-      react-hook-form: 7.41.3
+      react-hook-form: 7.42.1
       tsconfig: workspace:*
     dependencies:
-      '@tanstack/react-query': 4.20.4_biqbaboplfbrettd7655fr4n2y
-      '@wundergraph/nextjs': 0.7.7_2jyofirdckvkqkv5moktdjmqzq
-      '@wundergraph/react-query': 0.2.4_77l5dkuhizyj577r4w35zmiqgi
-      '@wundergraph/sdk': 0.130.2
+      '@tanstack/react-query': 4.22.0_biqbaboplfbrettd7655fr4n2y
+      '@wundergraph/nextjs': 0.8.0_m22nqylvdidh3apcitmk5of34a
+      '@wundergraph/react-query': 0.3.0_3oyxy4j6fw64bwgztjtzyzsudm
+      '@wundergraph/sdk': 0.131.0
       n2ngateway: link:../../packages/n2ngateway
       next: 13.1.2_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-hook-form: 7.41.3_react@18.2.0
+      react-hook-form: 7.42.1_react@18.2.0
     devDependencies:
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.10
@@ -107,11 +107,11 @@ importers:
 
   packages/n2ngateway:
     specifiers:
-      '@wundergraph/nextjs': 0.7.3
-      '@wundergraph/sdk': 0.128.0
+      '@wundergraph/nextjs': 0.8.0
+      '@wundergraph/sdk': 0.131.0
     dependencies:
-      '@wundergraph/nextjs': 0.7.3_yokhyzfhbkw63lrkzficdlrkle
-      '@wundergraph/sdk': 0.128.0
+      '@wundergraph/nextjs': 0.8.0_m22nqylvdidh3apcitmk5of34a
+      '@wundergraph/sdk': 0.131.0
 
   packages/tsconfig:
     specifiers: {}
@@ -454,10 +454,6 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@next/env/12.3.4:
-    resolution: {integrity: sha512-H/69Lc5Q02dq3o+dxxy5O/oNxFsZpdL6WREtOOtOM1B/weonIwDXkekr1KV5DPVPr12IHFPrMrcJQ6bgPMfn7A==}
-    dev: false
-
   /@next/env/13.1.2:
     resolution: {integrity: sha512-PpT4UZIX66VMTqXt4HKEJ+/PwbS+tWmmhZlazaws1a+dbUA5pPdjntQ46Jvj616i3ZKN9doS9LHx3y50RLjAWg==}
     dev: false
@@ -474,28 +470,10 @@ packages:
       glob: 7.1.7
     dev: false
 
-  /@next/swc-android-arm-eabi/12.3.4:
-    resolution: {integrity: sha512-cM42Cw6V4Bz/2+j/xIzO8nK/Q3Ly+VSlZJTa1vHzsocJRYz8KT6MrreXaci2++SIZCF1rVRCDgAg5PpqRibdIA==}
-    engines: {node: '>= 10'}
-    cpu: [arm]
-    os: [android]
-    requiresBuild: true
-    dev: false
-    optional: true
-
   /@next/swc-android-arm-eabi/13.1.2:
     resolution: {integrity: sha512-7mRz1owoGsbfIcdOJA3kk7KEwPZ+OvVT1z9DkR/yru4QdVLF69h/1SHy0vlUNQMxDRllabhxCfkoZCB34GOGAg==}
     engines: {node: '>= 10'}
     cpu: [arm]
-    os: [android]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-android-arm64/12.3.4:
-    resolution: {integrity: sha512-5jf0dTBjL+rabWjGj3eghpLUxCukRhBcEJgwLedewEA/LJk2HyqCvGIwj5rH+iwmq1llCWbOky2dO3pVljrapg==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
     os: [android]
     requiresBuild: true
     dev: false
@@ -510,28 +488,10 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-darwin-arm64/12.3.4:
-    resolution: {integrity: sha512-DqsSTd3FRjQUR6ao0E1e2OlOcrF5br+uegcEGPVonKYJpcr0MJrtYmPxd4v5T6UCJZ+XzydF7eQo5wdGvSZAyA==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: false
-    optional: true
-
   /@next/swc-darwin-arm64/13.1.2:
     resolution: {integrity: sha512-RikoQqy109r2222UJlyGs4dZw2BibkfPqpeFdW5JEGv+L2PStlHID8DwyVYbmHfQ0VIBGvbf/NAUtFakAWlhwg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-darwin-x64/12.3.4:
-    resolution: {integrity: sha512-PPF7tbWD4k0dJ2EcUSnOsaOJ5rhT3rlEt/3LhZUGiYNL8KvoqczFrETlUx0cUYaXe11dRA3F80Hpt727QIwByQ==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: false
@@ -546,29 +506,11 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-freebsd-x64/12.3.4:
-    resolution: {integrity: sha512-KM9JXRXi/U2PUM928z7l4tnfQ9u8bTco/jb939pdFUHqc28V43Ohd31MmZD1QzEK4aFlMRaIBQOWQZh4D/E5lQ==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [freebsd]
-    requiresBuild: true
-    dev: false
-    optional: true
-
   /@next/swc-freebsd-x64/13.1.2:
     resolution: {integrity: sha512-ax4j8VrdFQ/xc3W7Om0u1vnDxVApQHKsChBbAMynCrnycZmpbqK4MZu4ZkycT+mx2eccCiqZROpbzDbEdPosEw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [freebsd]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-arm-gnueabihf/12.3.4:
-    resolution: {integrity: sha512-3zqD3pO+z5CZyxtKDTnOJ2XgFFRUBciOox6EWkoZvJfc9zcidNAQxuwonUeNts6Xbm8Wtm5YGIRC0x+12YH7kw==}
-    engines: {node: '>= 10'}
-    cpu: [arm]
-    os: [linux]
     requiresBuild: true
     dev: false
     optional: true
@@ -582,26 +524,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-linux-arm64-gnu/12.3.4:
-    resolution: {integrity: sha512-kiX0vgJGMZVv+oo1QuObaYulXNvdH/IINmvdZnVzMO/jic/B8EEIGlZ8Bgvw8LCjH3zNVPO3mGrdMvnEEPEhKA==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
   /@next/swc-linux-arm64-gnu/13.1.2:
     resolution: {integrity: sha512-AxJdjocLtPrsBY4P2COSBIc3crT5bpjgGenNuINoensOlXhBkYM0aRDYZdydwXOhG+kN2ngUvfgitop9pa204w==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-arm64-musl/12.3.4:
-    resolution: {integrity: sha512-EETZPa1juczrKLWk5okoW2hv7D7WvonU+Cf2CgsSoxgsYbUCZ1voOpL4JZTOb6IbKMDo6ja+SbY0vzXZBUMvkQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -618,26 +542,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-linux-x64-gnu/12.3.4:
-    resolution: {integrity: sha512-4csPbRbfZbuWOk3ATyWcvVFdD9/Rsdq5YHKvRuEni68OCLkfy4f+4I9OBpyK1SKJ00Cih16NJbHE+k+ljPPpag==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
   /@next/swc-linux-x64-gnu/13.1.2:
     resolution: {integrity: sha512-TsLsjZwUlgmvI42neTuIoD6K9RlXCUzqPtvIClgXxVO0um0DiZwK+M+0zX/uVXhMVphfPY2c5YeR1zFSIONY4A==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-x64-musl/12.3.4:
-    resolution: {integrity: sha512-YeBmI+63Ro75SUiL/QXEVXQ19T++58aI/IINOyhpsRL1LKdyfK/35iilraZEFz9bLQrwy1LYAR5lK200A9Gjbg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -654,15 +560,6 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-win32-arm64-msvc/12.3.4:
-    resolution: {integrity: sha512-Sd0qFUJv8Tj0PukAYbCCDbmXcMkbIuhnTeHm9m4ZGjCf6kt7E/RMs55Pd3R5ePjOkN7dJEuxYBehawTR/aPDSQ==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [win32]
-    requiresBuild: true
-    dev: false
-    optional: true
-
   /@next/swc-win32-arm64-msvc/13.1.2:
     resolution: {integrity: sha512-DmXFaRTgt2KrV9dmRLifDJE+cYiutHVFIw5/C9BtnwXH39uf3YbPxeD98vNrtqqqZVVLXY/1ySaSIwzYnqeY9g==}
     engines: {node: '>= 10'}
@@ -672,28 +569,10 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-win32-ia32-msvc/12.3.4:
-    resolution: {integrity: sha512-rt/vv/vg/ZGGkrkKcuJ0LyliRdbskQU+91bje+PgoYmxTZf/tYs6IfbmgudBJk6gH3QnjHWbkphDdRQrseRefQ==}
-    engines: {node: '>= 10'}
-    cpu: [ia32]
-    os: [win32]
-    requiresBuild: true
-    dev: false
-    optional: true
-
   /@next/swc-win32-ia32-msvc/13.1.2:
     resolution: {integrity: sha512-3+nBkuFs/wT+lmRVQNH5SyDT7I4vUlNPntosEaEP63FuYQdPLaxz0GvcR66MdFSFh2fsvazpe4wciOwVS4FItQ==}
     engines: {node: '>= 10'}
     cpu: [ia32]
-    os: [win32]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-win32-x64-msvc/12.3.4:
-    resolution: {integrity: sha512-DQ20JEfTBZAgF8QCjYfJhv2/279M6onxFjdG/+5B0Cyj00/EdBxiWb2eGGFgQhrBbNv/lsvzFbbi0Ptf8Vw/bg==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: false
@@ -818,24 +697,18 @@ packages:
     resolution: {integrity: sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==}
     dev: true
 
-  /@swc/helpers/0.4.11:
-    resolution: {integrity: sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==}
-    dependencies:
-      tslib: 2.4.1
-    dev: false
-
   /@swc/helpers/0.4.14:
     resolution: {integrity: sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==}
     dependencies:
       tslib: 2.4.1
     dev: false
 
-  /@tanstack/query-core/4.20.4:
-    resolution: {integrity: sha512-lhLtGVNJDsJ/DyZXrLzekDEywQqRVykgBqTmkv0La32a/RleILXy6JMLBb7UmS3QCatg/F/0N9/5b0i5j6IKcA==}
+  /@tanstack/query-core/4.22.0:
+    resolution: {integrity: sha512-OeLyBKBQoT265f5G9biReijeP8mBxNFwY7ZUu1dKL+YzqpG5q5z7J/N1eT8aWyKuhyDTiUHuKm5l+oIVzbtrjw==}
     dev: false
 
-  /@tanstack/react-query/4.20.4_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-SJRxx13k/csb9lXAJfycgVA1N/yU/h3bvRNWP0+aHMfMjmbyX82FdoAcckDBbOdEyAupvb0byelNHNeypCFSyA==}
+  /@tanstack/react-query/4.22.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-P9o+HjG42uB/xHR6dMsJaPhtZydSe4v0xdG5G/cEj1oHZAXelMlm67/rYJNQGKgBamKElKogj+HYGF+NY2yHYg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -846,7 +719,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@tanstack/query-core': 4.20.4
+      '@tanstack/query-core': 4.22.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
@@ -1066,90 +939,59 @@ packages:
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
     dev: false
 
-  /@wundergraph/nextjs/0.7.3_yokhyzfhbkw63lrkzficdlrkle:
-    resolution: {integrity: sha512-wLWNk/VS9YD0kz4i/mjnfGVjEShw1/b7Ryn9S7hU4rk5jE42pk8b9em188NB1x88liqkxKxICE+OX1mR8W1Z/w==}
+  /@wundergraph/nextjs/0.8.0_m22nqylvdidh3apcitmk5of34a:
+    resolution: {integrity: sha512-oUDyOBE6DpyxyzwFQSPPZgJRWdEY8qcol76UVrSdv0stUzrtARQQLezODPLGKVi9BVUoKOtdKLA+ciNtHAmesQ==}
     peerDependencies:
       '@wundergraph/sdk': '>=0.91.0'
+      next: ^12.1.0 || ^13.0.0
       react: ^16.8.0 || ^17.0.2 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.2 || ^18.0.0
       swr: ^2.0.0
     dependencies:
-      '@wundergraph/protobuf': 0.100.0
-      '@wundergraph/sdk': 0.128.0
-      '@wundergraph/swr': 0.9.3_yokhyzfhbkw63lrkzficdlrkle
+      '@wundergraph/protobuf': 0.101.0
+      '@wundergraph/sdk': 0.131.0
+      '@wundergraph/swr': 0.10.0_qoefd5xcxehrd2g42tjwlt55wy
       handlebars: 4.7.7
-      next: 12.3.4_biqbaboplfbrettd7655fr4n2y
+      next: 13.1.2_biqbaboplfbrettd7655fr4n2y
       object-hash: 2.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-ssr-prepass: 1.5.0_react@18.2.0
       swr: 2.0.0_react@18.2.0
-    transitivePeerDependencies:
-      - '@babel/core'
-      - babel-plugin-macros
-      - fibers
-      - node-sass
-      - sass
     dev: false
 
-  /@wundergraph/nextjs/0.7.7_2jyofirdckvkqkv5moktdjmqzq:
-    resolution: {integrity: sha512-P/Lyuuy4uCyPyxf1T/SU6y2BI+JJhh7dV1hcom9NbnS7gB4X2LN7p1/1jFhcgshhbOnjKW5RCbMcUzz0/xBgfQ==}
-    peerDependencies:
-      '@wundergraph/sdk': '>=0.91.0'
-      react: ^16.8.0 || ^17.0.2 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.2 || ^18.0.0
-      swr: ^2.0.0
-    dependencies:
-      '@wundergraph/protobuf': 0.100.0
-      '@wundergraph/sdk': 0.130.2
-      '@wundergraph/swr': 0.9.7_2jyofirdckvkqkv5moktdjmqzq
-      handlebars: 4.7.7
-      next: 12.3.4_biqbaboplfbrettd7655fr4n2y
-      object-hash: 2.2.0
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      react-ssr-prepass: 1.5.0_react@18.2.0
-      swr: 2.0.0_react@18.2.0
-    transitivePeerDependencies:
-      - '@babel/core'
-      - babel-plugin-macros
-      - fibers
-      - node-sass
-      - sass
-    dev: false
-
-  /@wundergraph/protobuf/0.100.0:
-    resolution: {integrity: sha512-nWGdAU8MqLo7A3uzk/yFZ2OxzccLiPzLuVCXGaotYs5jITJFjsXj0uF5fvBttIlIZNWYgZbFlOcbnrNq2XasuQ==}
+  /@wundergraph/protobuf/0.101.0:
+    resolution: {integrity: sha512-DqK3/XNu+ZfWHtecnONuGmKloJej0D9Pji9/pithqdn2QQhSJ/RoL7FxYTZsS6WQxnA2ZKObWGmFlUeyrnxvgw==}
     dependencies:
       long: 5.2.1
       protobufjs: 6.11.3
       ts-proto: 1.137.0
     dev: false
 
-  /@wundergraph/react-query/0.2.4_77l5dkuhizyj577r4w35zmiqgi:
-    resolution: {integrity: sha512-ysv1j90EVifX0n66Fam009qFbz9h0njo2s2WGX0BeJTEYoCsDiD/G/P0pP13CHA6OyZlvmBkz9uyqo+Tz5Qtvw==}
+  /@wundergraph/react-query/0.3.0_3oyxy4j6fw64bwgztjtzyzsudm:
+    resolution: {integrity: sha512-TlLetPy1ZXNkSGJ+b7ax2YzwgI+82HJiOmtDmN8RAUXSuEYmGNzCVq82IbOckEZbZLR73ovBlRHyz1EARtT4Tg==}
     peerDependencies:
       '@tanstack/react-query': ^4.16.1
       '@wundergraph/sdk': '>=0.110.0'
       react: ^16.8.0 || ^17.0.2 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.2 || ^18.0.0
     dependencies:
-      '@tanstack/react-query': 4.20.4_biqbaboplfbrettd7655fr4n2y
-      '@wundergraph/sdk': 0.130.2
+      '@tanstack/react-query': 4.22.0_biqbaboplfbrettd7655fr4n2y
+      '@wundergraph/sdk': 0.131.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@wundergraph/sdk/0.128.0:
-    resolution: {integrity: sha512-n4ojXJcU8+zHlVQHwJ/zTzDEXr/usJmFFjJPNypq/NZG8/KtlNLtl6qMQ7Nv9x1mOmnlqkNP12hNbuBYtJ7Huw==}
+  /@wundergraph/sdk/0.131.0:
+    resolution: {integrity: sha512-2fidgKVSs0PQ4JzXdFh+fRh9BzmJSzLekUGOOcItGmlgcLEjVOnZLWxN4zO43XMNZ5y+fJi+pVKBv7NrdVheVg==}
     hasBin: true
     dependencies:
       '@fastify/formbody': 7.4.0
       '@graphql-tools/schema': 8.5.1_graphql@16.6.0
       '@prisma/generator-helper': 3.15.2
       '@web-std/fetch': 4.1.0
-      '@wundergraph/protobuf': 0.100.0
-      '@wundergraph/wunderctl': 0.122.0
+      '@wundergraph/protobuf': 0.101.0
+      '@wundergraph/wunderctl': 0.126.1
       axios: 0.26.1
       axios-retry: 3.3.1
       close-with-grace: 1.1.0
@@ -1173,97 +1015,31 @@ packages:
       swagger2openapi: 7.0.8
       terminate: 2.5.0
       ts-retry-promise: 0.7.0
+      zod: 3.20.2
+      zod-to-json-schema: 3.20.2_zod@3.20.2
     transitivePeerDependencies:
       - debug
       - encoding
       - supports-color
     dev: false
 
-  /@wundergraph/sdk/0.130.2:
-    resolution: {integrity: sha512-J3sTcEoHumycWmIqgAXarFHkbvx2PAKHu8v5Z+SEo4QQzOGnBsbCF2tKHHQoeh0ZF7C4AONZgj45uHVWwZm0hA==}
-    hasBin: true
-    dependencies:
-      '@fastify/formbody': 7.4.0
-      '@graphql-tools/schema': 8.5.1_graphql@16.6.0
-      '@prisma/generator-helper': 3.15.2
-      '@web-std/fetch': 4.1.0
-      '@wundergraph/protobuf': 0.100.0
-      '@wundergraph/wunderctl': 0.125.0
-      axios: 0.26.1
-      axios-retry: 3.3.1
-      close-with-grace: 1.1.0
-      execa: 5.1.1
-      fastify: 4.10.2
-      fastify-plugin: 4.4.0
-      graphql: 16.6.0
-      graphql-helix: 1.13.0_graphql@16.6.0
-      handlebars: 4.7.7
-      js-yaml: 4.1.0
-      json-schema: 0.4.0
-      lodash: 4.17.21
-      long: 5.2.1
-      object-hash: 2.2.0
-      openapi-types: 10.0.0
-      pino: 8.8.0
-      pino-pretty: 9.1.1
-      postman-collection: 4.1.6
-      prettier: 2.8.3
-      protobufjs: 6.11.3
-      swagger2openapi: 7.0.8
-      terminate: 2.5.0
-      ts-retry-promise: 0.7.0
-    transitivePeerDependencies:
-      - debug
-      - encoding
-      - supports-color
-    dev: false
-
-  /@wundergraph/swr/0.9.3_yokhyzfhbkw63lrkzficdlrkle:
-    resolution: {integrity: sha512-9jQ6bUQw3lKazQy/zMoq68ueHfX4k0DUDwttV47FflTeoc14vIz8f/43SMOukvZxaksvWCO/XenNu7dQ2gnpNg==}
+  /@wundergraph/swr/0.10.0_qoefd5xcxehrd2g42tjwlt55wy:
+    resolution: {integrity: sha512-K92/gpfk+GrlFXjY173Oi6Pel+iF5K/ky5cWjoTNzGOMSWBQfKe1ozNgUK6IGwFuXasUNMCYMxrxMDaq5sUXPQ==}
     peerDependencies:
       '@wundergraph/sdk': '>=0.110.0'
       react: ^16.8.0 || ^17.0.2 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.2 || ^18.0.0
       swr: ^2.0.0
     dependencies:
-      '@wundergraph/sdk': 0.128.0
+      '@wundergraph/sdk': 0.131.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-ssr-prepass: 1.5.0_react@18.2.0
       swr: 2.0.0_react@18.2.0
     dev: false
 
-  /@wundergraph/swr/0.9.7_2jyofirdckvkqkv5moktdjmqzq:
-    resolution: {integrity: sha512-dq8L7hrhbs8rtZvX4x9hAnR7dm+uJrX/ogobNt7UxGweC9Ob1iA+1Z17Vvc3ugohMQAuwpTECgY0ptSXgIKUFg==}
-    peerDependencies:
-      '@wundergraph/sdk': '>=0.110.0'
-      react: ^16.8.0 || ^17.0.2 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.2 || ^18.0.0
-      swr: ^2.0.0
-    dependencies:
-      '@wundergraph/sdk': 0.130.2
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      react-ssr-prepass: 1.5.0_react@18.2.0
-      swr: 2.0.0_react@18.2.0
-    dev: false
-
-  /@wundergraph/wunderctl/0.122.0:
-    resolution: {integrity: sha512-EVrJuz3Amc9ScT63er39YgrGNAZoudmZyHJWmTLiiVPUdm2M8SsLOqsXWMGVvxvgesIrlrG1II6x4EYflTNREw==}
-    hasBin: true
-    requiresBuild: true
-    dependencies:
-      axios: 0.26.1_debug@4.3.4
-      debug: 4.3.4
-      execa: 5.1.1
-      rimraf: 3.0.2
-      tar: 6.1.13
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
-  /@wundergraph/wunderctl/0.125.0:
-    resolution: {integrity: sha512-DoMvZrvtAYI53wCmi6Au4EUoqcIpxzCxRdhIRt7DLFsrjpugcqmamA5ZkGSA+weisO0TcHbX6bGEZXPlyEBLkg==}
+  /@wundergraph/wunderctl/0.126.1:
+    resolution: {integrity: sha512-fJeGSUmF+hkD21IZ3nE01hokFlfGhSMcfiOfe5xy0egLH3xNg+ysRWVyEllZBt8ay/t43cSQo+E/EH21mnWLdg==}
     hasBin: true
     requiresBuild: true
     dependencies:
@@ -3729,51 +3505,6 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next/12.3.4_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-VcyMJUtLZBGzLKo3oMxrEF0stxh8HwuW976pAzlHhI3t8qJ4SROjCrSh1T24bhrbjw55wfZXAbXPGwPt5FLRfQ==}
-    engines: {node: '>=12.22.0'}
-    hasBin: true
-    peerDependencies:
-      fibers: '>= 3.1.0'
-      node-sass: ^6.0.0 || ^7.0.0
-      react: ^17.0.2 || ^18.0.0-0
-      react-dom: ^17.0.2 || ^18.0.0-0
-      sass: ^1.3.0
-    peerDependenciesMeta:
-      fibers:
-        optional: true
-      node-sass:
-        optional: true
-      sass:
-        optional: true
-    dependencies:
-      '@next/env': 12.3.4
-      '@swc/helpers': 0.4.11
-      caniuse-lite: 1.0.30001441
-      postcss: 8.4.14
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      styled-jsx: 5.0.7_react@18.2.0
-      use-sync-external-store: 1.2.0_react@18.2.0
-    optionalDependencies:
-      '@next/swc-android-arm-eabi': 12.3.4
-      '@next/swc-android-arm64': 12.3.4
-      '@next/swc-darwin-arm64': 12.3.4
-      '@next/swc-darwin-x64': 12.3.4
-      '@next/swc-freebsd-x64': 12.3.4
-      '@next/swc-linux-arm-gnueabihf': 12.3.4
-      '@next/swc-linux-arm64-gnu': 12.3.4
-      '@next/swc-linux-arm64-musl': 12.3.4
-      '@next/swc-linux-x64-gnu': 12.3.4
-      '@next/swc-linux-x64-musl': 12.3.4
-      '@next/swc-win32-arm64-msvc': 12.3.4
-      '@next/swc-win32-ia32-msvc': 12.3.4
-      '@next/swc-win32-x64-msvc': 12.3.4
-    transitivePeerDependencies:
-      - '@babel/core'
-      - babel-plugin-macros
-    dev: false
-
   /next/13.1.2_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-Rdnnb2YH///w78FEOR/IQ6TXga+qpth4OqFSem48ng1PYYKr6XBsIk1XVaRcIGM3o6iiHnun0nJvkJHDf+ICyQ==}
     engines: {node: '>=14.6.0'}
@@ -4425,8 +4156,8 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-hook-form/7.41.3_react@18.2.0:
-    resolution: {integrity: sha512-5QNTmqJtDb88WV5n41b6+AmcDMVyaJ3tccPgHAgS215w3jZ3bmJhDO27kNTr8u4YHNYXmS7p1/4/KachBAlUtw==}
+  /react-hook-form/7.42.1_react@18.2.0:
+    resolution: {integrity: sha512-2UIGqwMZksd5HS55crTT1ATLTr0rAI4jS7yVuqTaoRVDhY2Qc4IyjskCmpnmdYqUNOYFy04vW253tb2JRVh+IQ==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
@@ -4994,22 +4725,6 @@ packages:
       '@tokenizer/token': 0.3.0
       peek-readable: 5.0.0
     dev: true
-
-  /styled-jsx/5.0.7_react@18.2.0:
-    resolution: {integrity: sha512-b3sUzamS086YLRuvnaDigdAewz1/EFYlHpYBP5mZovKEdQQOIIYq8lApylub3HHZ6xFjV051kkGU7cudJmrXEA==}
-    engines: {node: '>= 12.0.0'}
-    peerDependencies:
-      '@babel/core': '*'
-      babel-plugin-macros: '*'
-      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      babel-plugin-macros:
-        optional: true
-    dependencies:
-      react: 18.2.0
-    dev: false
 
   /styled-jsx/5.1.1_react@18.2.0:
     resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
@@ -5603,3 +5318,15 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  /zod-to-json-schema/3.20.2_zod@3.20.2:
+    resolution: {integrity: sha512-qka3UAXmVXD8z5SHkRU89UyHp8JHJW7zc8RQCpt7QloJOn6uijwkjUm8o+M/cF1IysmKc5gxac/QeDikaQMdzQ==}
+    peerDependencies:
+      zod: ^3.20.0
+    dependencies:
+      zod: 3.20.2
+    dev: false
+
+  /zod/3.20.2:
+    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
+    dev: false
