@@ -6,7 +6,7 @@
   "types": "client.ts",
   "license": "MIT",
   "dependencies": {
-    "@wundergraph/nextjs": "0.8.1",
-    "@wundergraph/sdk": "0.131.1"
+    "@wundergraph/nextjs": "0.8.2",
+    "@wundergraph/sdk": "0.131.2"
   }
 }
