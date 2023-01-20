@@ -45,15 +45,15 @@ importers:
 
   apps/api:
     specifiers:
-      '@wundergraph/nextjs': 0.8.2
-      '@wundergraph/sdk': 0.131.2
-      '@wundergraph/swr': 0.11.1
+      '@wundergraph/nextjs': 0.8.3
+      '@wundergraph/sdk': 0.132.0
+      '@wundergraph/swr': 0.12.0
       graphql: 16.6.0
       tsconfig: workspace:*
     dependencies:
-      '@wundergraph/nextjs': 0.8.2_i4uedmjaa5n5jkrppwwneast3y
-      '@wundergraph/sdk': 0.131.2
-      '@wundergraph/swr': 0.11.1_5mgauv4cnf5gg52py2n3y43m24
+      '@wundergraph/nextjs': 0.8.3_pd2g5xvnp4jfpoitxchleqjoje
+      '@wundergraph/sdk': 0.132.0
+      '@wundergraph/swr': 0.12.0_yrdbdb52qgqoyuqg3httelz7uu
       graphql: 16.6.0
     devDependencies:
       tsconfig: link:../../packages/tsconfig
@@ -63,9 +63,9 @@ importers:
       '@tanstack/react-query': 4.22.0
       '@types/react': 18.0.27
       '@types/react-dom': 18.0.10
-      '@wundergraph/nextjs': 0.8.2
-      '@wundergraph/react-query': 0.4.1
-      '@wundergraph/sdk': 0.131.2
+      '@wundergraph/nextjs': 0.8.3
+      '@wundergraph/react-query': 0.5.0
+      '@wundergraph/sdk': 0.132.0
       eslint: 8.32.0
       eslint-config-custom: workspace:*
       n2ngateway: workspace:*
@@ -76,9 +76,9 @@ importers:
       tsconfig: workspace:*
     dependencies:
       '@tanstack/react-query': 4.22.0_biqbaboplfbrettd7655fr4n2y
-      '@wundergraph/nextjs': 0.8.2_i4uedmjaa5n5jkrppwwneast3y
-      '@wundergraph/react-query': 0.4.1_jwnouoa6xor6kjqdedybxkbqwu
-      '@wundergraph/sdk': 0.131.2
+      '@wundergraph/nextjs': 0.8.3_pd2g5xvnp4jfpoitxchleqjoje
+      '@wundergraph/react-query': 0.5.0_jj2yugz3feuulexjx3ww2zh5gu
+      '@wundergraph/sdk': 0.132.0
       n2ngateway: link:../../packages/n2ngateway
       next: 13.1.2_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
@@ -107,11 +107,11 @@ importers:
 
   packages/n2ngateway:
     specifiers:
-      '@wundergraph/nextjs': 0.8.2
-      '@wundergraph/sdk': 0.131.2
+      '@wundergraph/nextjs': 0.8.3
+      '@wundergraph/sdk': 0.132.0
     dependencies:
-      '@wundergraph/nextjs': 0.8.2_i4uedmjaa5n5jkrppwwneast3y
-      '@wundergraph/sdk': 0.131.2
+      '@wundergraph/nextjs': 0.8.3_pd2g5xvnp4jfpoitxchleqjoje
+      '@wundergraph/sdk': 0.132.0
 
   packages/tsconfig:
     specifiers: {}
@@ -931,8 +931,8 @@ packages:
     resolution: {integrity: sha512-BEO6al7BYqcnfX15W2cnGR+Q566ACXAT9UQykORCWW80lmkpWsnEob6zJS1ZVBKsSJC8+7vJkHwlp+lXG1UCdw==}
     dev: false
 
-  /@wundergraph/nextjs/0.8.2_i4uedmjaa5n5jkrppwwneast3y:
-    resolution: {integrity: sha512-V6rHRdy/CrdReRFU8tzEeZruuoW/RWL5COIAm0/t3y1Uk9fWUzTshgOTqHYGNAQC0ew32ju0XF3hZZ2k35CqUA==}
+  /@wundergraph/nextjs/0.8.3_pd2g5xvnp4jfpoitxchleqjoje:
+    resolution: {integrity: sha512-qOTCrBJzQ7U56F2apW95x3IFyaW8l57PHfgH44kWHuEB2dAz9CyRQ5BQyokeOSaLTIY+OI+Tf6qhLSFu/YtP7A==}
     peerDependencies:
       '@wundergraph/sdk': '>=0.91.0'
       next: ^12.1.0 || ^13.0.0
@@ -940,9 +940,9 @@ packages:
       react-dom: ^16.8.0 || ^17.0.2 || ^18.0.0
       swr: ^2.0.0
     dependencies:
-      '@wundergraph/protobuf': 0.101.0
-      '@wundergraph/sdk': 0.131.2
-      '@wundergraph/swr': 0.11.1_5mgauv4cnf5gg52py2n3y43m24
+      '@wundergraph/protobuf': 0.102.0
+      '@wundergraph/sdk': 0.132.0
+      '@wundergraph/swr': 0.12.0_yrdbdb52qgqoyuqg3httelz7uu
       handlebars: 4.7.7
       next: 13.1.2_biqbaboplfbrettd7655fr4n2y
       object-hash: 2.2.0
@@ -952,16 +952,16 @@ packages:
       swr: 2.0.0_react@18.2.0
     dev: false
 
-  /@wundergraph/protobuf/0.101.0:
-    resolution: {integrity: sha512-DqK3/XNu+ZfWHtecnONuGmKloJej0D9Pji9/pithqdn2QQhSJ/RoL7FxYTZsS6WQxnA2ZKObWGmFlUeyrnxvgw==}
+  /@wundergraph/protobuf/0.102.0:
+    resolution: {integrity: sha512-vAZHwnJN9QyH6bvBR+lo2DL9R4gAz0cko8axfSWvXcLu0/wUk24HrC9ugnr4kSpeUaU92F78wB7y5XkpV05wIQ==}
     dependencies:
       long: 5.2.1
       protobufjs: 6.11.3
       ts-proto: 1.137.0
     dev: false
 
-  /@wundergraph/react-query/0.4.1_jwnouoa6xor6kjqdedybxkbqwu:
-    resolution: {integrity: sha512-H30WiN+ShzJ5d+QoPX0XrplNXr3AwMlVheaX7vYOZ4BypiotvQJOn+mZEqZ6BrNIjcdyOZcDEcmlA0DkcIWdGw==}
+  /@wundergraph/react-query/0.5.0_jj2yugz3feuulexjx3ww2zh5gu:
+    resolution: {integrity: sha512-xHi/kdA2BCudJvRUoF7cjJW/yyAMbw2ldm9e4TyGn7nZwL8iHin2uRpcYOMeam7tSsV327g9Uk5tdypuY/nfeA==}
     peerDependencies:
       '@tanstack/react-query': ^4.16.1
       '@wundergraph/sdk': '>=0.110.0'
@@ -969,21 +969,21 @@ packages:
       react-dom: ^16.8.0 || ^17.0.2 || ^18.0.0
     dependencies:
       '@tanstack/react-query': 4.22.0_biqbaboplfbrettd7655fr4n2y
-      '@wundergraph/sdk': 0.131.2
+      '@wundergraph/sdk': 0.132.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@wundergraph/sdk/0.131.2:
-    resolution: {integrity: sha512-anc/mOszRqKCbT36UMmkHzCJpOv7aw4jPxQuzk+UG2C+VcjwZHqp8Rr5KFLwq4nwOcSV4fFYbNmFQfLpZjO6Mw==}
+  /@wundergraph/sdk/0.132.0:
+    resolution: {integrity: sha512-DeDLPadN9XcgD8YRTDWEWAqwDgCrYHHMOYnYgFv1aoE6JUsMhbYx2UWOOLQPWtNEtdYVA85HQqUtAywaO/9mcA==}
     hasBin: true
     dependencies:
       '@fastify/formbody': 7.4.0
       '@graphql-tools/schema': 8.5.1_graphql@16.6.0
       '@prisma/generator-helper': 3.15.2
       '@web-std/fetch': 4.1.0
-      '@wundergraph/protobuf': 0.101.0
-      '@wundergraph/wunderctl': 0.126.2
+      '@wundergraph/protobuf': 0.102.0
+      '@wundergraph/wunderctl': 0.127.0
       axios: 0.26.1
       axios-retry: 3.3.1
       close-with-grace: 1.1.0
@@ -1015,23 +1015,23 @@ packages:
       - supports-color
     dev: false
 
-  /@wundergraph/swr/0.11.1_5mgauv4cnf5gg52py2n3y43m24:
-    resolution: {integrity: sha512-znRXrk8Uh2aOyuBxyNrjoK8YHGN8rHfSyTYL3//qantQfrdTV+NxVoSue0DUqEto6Ai6F9LcxRkooOAoSzuUZg==}
+  /@wundergraph/swr/0.12.0_yrdbdb52qgqoyuqg3httelz7uu:
+    resolution: {integrity: sha512-Ujhk7oHnRUAaEMgABgq8BTkSOPFM9/IB04QG5HYPMcUXEEJqoPnCeP/mdtP+riqoBr2OOiMSKl0mfO7BqbeZBg==}
     peerDependencies:
       '@wundergraph/sdk': '>=0.110.0'
       react: ^16.8.0 || ^17.0.2 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.2 || ^18.0.0
       swr: ^2.0.0
     dependencies:
-      '@wundergraph/sdk': 0.131.2
+      '@wundergraph/sdk': 0.132.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-ssr-prepass: 1.5.0_react@18.2.0
       swr: 2.0.0_react@18.2.0
     dev: false
 
-  /@wundergraph/wunderctl/0.126.2:
-    resolution: {integrity: sha512-NoAFhLRI1zS8jfG75maXAiox1CgESLMIMuGUZ+16FToUl3aD23YGgL4ZahqgkJoaSEMZe/xVKzeuVSIvErj/TQ==}
+  /@wundergraph/wunderctl/0.127.0:
+    resolution: {integrity: sha512-gMXzAgADBiw0xhzbzWoq1QdRVPmCzrILZK728ZSGB36IgR1oR15CYw0OImnWlQDvckn553bjp9lc+vVAH8NinQ==}
     hasBin: true
     requiresBuild: true
     dependencies:
