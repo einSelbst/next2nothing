@@ -10,9 +10,9 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@wundergraph/nextjs": "0.8.2",
-    "@wundergraph/sdk": "0.131.2",
-    "@wundergraph/swr": "0.11.1",
+    "@wundergraph/nextjs": "0.8.3",
+    "@wundergraph/sdk": "0.132.0",
+    "@wundergraph/swr": "0.12.0",
     "graphql": "16.6.0"
   },
   "devDependencies": {
