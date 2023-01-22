@@ -60,7 +60,7 @@ importers:
 
   apps/web:
     specifiers:
-      '@tanstack/react-query': 4.22.3
+      '@tanstack/react-query': 4.22.4
       '@types/react': 18.0.27
       '@types/react-dom': 18.0.10
       '@wundergraph/nextjs': 0.8.3
@@ -75,9 +75,9 @@ importers:
       react-hook-form: 7.42.1
       tsconfig: workspace:*
     dependencies:
-      '@tanstack/react-query': 4.22.3_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': 4.22.4_biqbaboplfbrettd7655fr4n2y
       '@wundergraph/nextjs': 0.8.3_pd2g5xvnp4jfpoitxchleqjoje
-      '@wundergraph/react-query': 0.5.0_wa2rzdkdjkxjhixvlm5iwnkski
+      '@wundergraph/react-query': 0.5.0_c76uvardyn46r3ytwtuhs52sii
       '@wundergraph/sdk': 0.132.0
       n2ngateway: link:../../packages/n2ngateway
       next: 13.1.2_biqbaboplfbrettd7655fr4n2y
@@ -703,12 +703,12 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /@tanstack/query-core/4.22.0:
-    resolution: {integrity: sha512-OeLyBKBQoT265f5G9biReijeP8mBxNFwY7ZUu1dKL+YzqpG5q5z7J/N1eT8aWyKuhyDTiUHuKm5l+oIVzbtrjw==}
+  /@tanstack/query-core/4.22.4:
+    resolution: {integrity: sha512-t79CMwlbBnj+yL82tEcmRN93bL4U3pae2ota4t5NN2z3cIeWw74pzdWrKRwOfTvLcd+b30tC+ciDlfYOKFPGUw==}
     dev: false
 
-  /@tanstack/react-query/4.22.3_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-5yBsXn+ddlPvfxCHrklATOnz/y72uOinect69DyUcGkYcvjh2wfkUPWAO+s/e7wDW2At8QEeRmkuwjKLH4vO6g==}
+  /@tanstack/react-query/4.22.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-e5j5Z88XUQGeEPMyz5XF1V0mMf6Da+6URXiTpZfUb9nuHs2nlNoA+EoIvnhccE5b9YT6Yg7kARhn2L7u94M/4A==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -719,7 +719,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@tanstack/query-core': 4.22.0
+      '@tanstack/query-core': 4.22.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
@@ -960,7 +960,7 @@ packages:
       ts-proto: 1.137.0
     dev: false
 
-  /@wundergraph/react-query/0.5.0_wa2rzdkdjkxjhixvlm5iwnkski:
+  /@wundergraph/react-query/0.5.0_c76uvardyn46r3ytwtuhs52sii:
     resolution: {integrity: sha512-xHi/kdA2BCudJvRUoF7cjJW/yyAMbw2ldm9e4TyGn7nZwL8iHin2uRpcYOMeam7tSsV327g9Uk5tdypuY/nfeA==}
     peerDependencies:
       '@tanstack/react-query': ^4.16.1
@@ -968,7 +968,7 @@ packages:
       react: ^16.8.0 || ^17.0.2 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.2 || ^18.0.0
     dependencies:
-      '@tanstack/react-query': 4.22.3_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': 4.22.4_biqbaboplfbrettd7655fr4n2y
       '@wundergraph/sdk': 0.132.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
