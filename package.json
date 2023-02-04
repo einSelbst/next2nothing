@@ -51,7 +51,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.4.2",
     "@commitlint/config-conventional": "17.4.2",
-    "@types/node": "18.11.18",
+    "@types/node": "18.11.19",
     "eslint": "8.32.0",
     "eslint-config-custom": "0.0.0",
     "git-format-staged": "3.0.0",
