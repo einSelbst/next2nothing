@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # Image layer for building the application
-FROM node:18-alpine as builder
+FROM node:19-alpine as builder
 
 RUN apk add --no-cache libc6-compat
 RUN apk update
@@ -27,7 +27,7 @@ RUN pnpm dlx turbo prune --scope=api --docker
 #RUN turbo prune --scope=api --docker
 
 # install dependencies
-FROM node:18-alpine AS installer
+FROM node:19-alpine AS installer
 RUN apk add --no-cache libc6-compat
 RUN apk update
 RUN corepack enable
@@ -50,7 +50,7 @@ COPY turbo.json turbo.json
 RUN pnpm turbo run build --filter=api...
 
 # Image layer for production
-FROM node:18-alpine as runner
+FROM node:19-alpine as runner
 WORKDIR /app
 
 # copy entire project and dependencies
