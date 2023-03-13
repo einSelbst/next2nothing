@@ -24,7 +24,7 @@
     "@wundergraph/react-query": "0.5.1",
     "@wundergraph/sdk": "0.132.1",
     "n2ngateway": "workspace:*",
-    "next": "13.1.2",
+    "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "7.42.1"
