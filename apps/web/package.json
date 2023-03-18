@@ -19,15 +19,15 @@
     "lint": "tsc --noEmit && TIMING=1 eslint . --format=pretty --cache"
   },
   "dependencies": {
-    "@tanstack/react-query": "4.23.0",
-    "@wundergraph/nextjs": "0.8.4",
-    "@wundergraph/react-query": "0.5.1",
-    "@wundergraph/sdk": "0.132.1",
+    "@tanstack/react-query": "4.27.0",
+    "@wundergraph/nextjs": "0.9.6",
+    "@wundergraph/react-query": "0.7.6",
+    "@wundergraph/sdk": "0.139.0",
     "n2ngateway": "workspace:*",
     "next": "13.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "7.42.1"
+    "react-hook-form": "7.43.7"
   },
   "devDependencies": {
     "@types/react": "18.0.27",
